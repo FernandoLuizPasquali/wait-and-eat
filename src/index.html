@@ -1,9 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<title>Projeto Angular</title>
+
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="content/css/app.css"/>
 </head>
 <body>
+	<div ng-view class="container"></div>
 
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular-route/angular-route.min.js"></script>
+
+	 <script src="app/app.module.js"></script>
+	 <script src="app/landing/landing.module.js"></script>
+	  <script src="app/landing/config.route.js"></script>
 </body>
 </html>
